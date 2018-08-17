@@ -22,5 +22,8 @@
   "homepage": "https://github.com/jobegood49/vendingMachineJS#readme",
   "devDependencies": {
     "jest": "^23.5.0"
+  },
+  "dependencies": {
+    "jest-cli": "^23.5.0"
   }
 }
