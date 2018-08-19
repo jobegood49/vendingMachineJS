@@ -9,4 +9,8 @@ describe("vendingMachine", () => {
     const result = new vendingMachine(9);
     expect(result.slots[0].spaces.length).toEqual(10);
   });
+  it("should should five types of coins", () => {
+    const result = new vendingMachine(9);
+    expect(result.coinInventory.length).toEqual(5);
+  });
 });
