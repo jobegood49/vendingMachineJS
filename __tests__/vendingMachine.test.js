@@ -13,4 +13,8 @@ describe("vendingMachine", () => {
     const result = new vendingMachine(9);
     expect(result.coinInventory.length).toEqual(5);
   });
+  it("if change is 2.5 dollars it should return 1 toonie and two quarters", () => {
+    const result = new vendingMachine(9);
+    expect(result.returnChange(2.5)).toEqual({ Toonie: 1, Loonie: 0, Quarter: 2 });
+  });
 });
