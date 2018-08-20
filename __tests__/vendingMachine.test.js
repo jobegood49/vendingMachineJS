@@ -17,4 +17,8 @@ describe("vendingMachine", () => {
     const result = new vendingMachine(9);
     expect(result.returnChange(2.5)).toEqual({ Toonie: 1, Loonie: 0, Quarter: 2 });
   });
+  it("if should return the first item in the slot", () => {
+    const result = new vendingMachine(9);
+    expect(result.selectItem(3).name).toEqual("pepsi");
+  });
 });
